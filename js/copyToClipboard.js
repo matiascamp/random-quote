@@ -1,5 +1,5 @@
-import showCustomAlert from "./customAlert";
-import { quote } from "./getAndInsertQuote"
+import showCustomAlert from "./customAlert.js";
+import { quote } from "./getAndInsertQuote.js"
 
 
 export default function copyToClipBoard () {
