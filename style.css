@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  font-family: "Outfit",sans-serif;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #101528;
+  box-sizing: border-box;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-container {
+  background-image: url('./assets/bg-image-random-quote.svg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: #20293a;
+  border-radius: 16px;
+  width: 500px;
+  color: #E3E8EF;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  gap: 8px;
+  min-height: 200px;
+  height: auto;
+}
+
+.quote {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.tags {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+
+.author-tags {
+  border: 2px solid #AEB0FF;
+  border-radius: 16px;
+  padding: 0px 15px 2px 15px;
+  color: #AEB0FF;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 16px;
+}
+
+button  {
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 0.7rem;
+  min-width: 85px;
+  background-color: #20293a;
+  border: none;
+  color: #E3E8EF;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+button:hover{
+  background-color: #252d3b;
+
+}
+
+.random::after {
+  content: url('./assets/regroup.svg');
+  padding-left: 8px;
+  display: flex;
+}
+
+.share::after {
+  content: url('./assets/link.svg');
+  padding-left: 8px;
+  display: flex;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #20293a;
+  border: none;
+  border-radius: 16px;
+  padding: 20px;
+  color: #E3E8EF;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+#closeAlert {
+  border: 2px solid #AEB0FF;
+  text-align: center;
+}
+
+.custom-alert button {
+  margin-top: 10px;
+}
+
+@media (max-width: 640px) {}
